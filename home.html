@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="india.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&
+family=Permanent+Marker&family=Roboto+Condensed:ital,
+wght@0,100..900;1,100..900&family=Tagesschrift&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&
+family=Delius&family=Kaushan+Script&family=David libre&family=Londrina+Shadow&family=Kenia&family=Konkhmer+Sleokchher&
+family=Lobster&family=Merienda&family=Newsreader&family=Lemon&family=Permanent+Marker&family=Roboto+Condensed:ital
+,wght@0,100..900;1,100..900&
+family=Roboto+Slab&family=Tagesschrift&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <h1 style="margin-bottom:-58px;font-family:lobster;color:#054805">Paris <u>Londoner</u>.</h1>
+        <button id="switch" onclick="document.getElementById('id02').style.display='block'">Sign in</button>
+        <button onclick="document.getElementById('id01').style.display='block'">Log in</button>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="mail"><b>Email id</b></label>
+                    <input type="email" placeholder="Enter Email id" name="psw" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                    
+
+                    <button type="submit" id="login">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" class="remember"> Remember me
+                    </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+        <div id="id02" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Full Name</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="mail"><b>Email id</b></label>
+                    <input type="email" placeholder="Enter Email id" name="psw" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <button type="submit" id="login">Sign in</button>
+                </div>
+            </div>
+        <img src="header.avif">
+        <div class="head-text">
+            <p>Find the best <i><u>version</u></i></p>
+            <h2 style="font-family:birthstone;font-size:100px">of your Style..</h2>
+            <button
+                style="border-radius:0;border-color:white;border-width:2px;color:white;background-color:transparent">Click
+                Here</button>
+        </div>
+    </div>
+    <div class="ribbon">
+        <div><button class="op"
+                style="border-radius:0;border-color:white;border-width:2px;color:white;background-color:transparent">Click
+                Here</button><img src="ph1.jpg">
+            <li>Formal Wear</li>
+        </div>
+        <div><button class="op"
+                style="border-radius:0;border-color:white;border-width:2px;color:white;background-color:transparent">Click
+                Here</button><img src="ph2.webp">
+            <li>Casual Wear</li>
+        </div>
+        <div><button class="op"
+                style="border-radius:0;border-color:white;border-width:2px;color:white;background-color:transparent">Click
+                Here</button><img src="ph4.jpg">
+            <li>Traditional Wear</li>
+        </div>
+    </div>
+    <div class="description">
+        <div id="info">
+            <h1>70% off &<br>Amazing offer</h1>
+            <h2 style="font-family:birthstone"> Feel the power of elegance</h2><br>
+            <p style="text-align:justify;font-family:calibri">
+                Discover our exclusive collection of formal wear
+                designed to elevatyour style and confidence.
+                Whether you're attending a business meeting,a
+                wedding, or a special event, our curated
+                selection of suits, dresses,and accessories
+                will ensure you make a lasting impression.
+                Crafted with precision and attention to detail,
+                our formal wear combines timeless elegance
+                with modern trends. Explore our range today
+                and take advantage of our limited-time offer of
+                70% off on select items. Don't miss out on the
+                opportunity to redefine your wardrobe with
+                sophistication and grace.
+            </p>
+            <button>Explore now</button>
+        </div>
+        <div><img src="ph3.webp"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
