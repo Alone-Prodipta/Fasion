@@ -26,14 +26,7 @@
 
         }
 
-        .custom-h2,
-        p {
-            color: bisque;
-        }
-
-        .custom-h2 {
-            font-family: 'Kenia';
-        }
+       
 
         .navbar .nav-link {
             color: rgb(4, 72, 4);
@@ -43,15 +36,17 @@
 
         }
 
-        .custom-p {
-            line-height: 50px;
-            font-family: 'kenia', cursive;
-
+        p
+        {
+            margin-top: 150px;
+            margin-bottom: 0;
+            color: bisque;
+            line-height: 2.5;
+            text-align: center;
+            text-decoration: bold;
+            font-family: cursive;
         }
-
-        .text-start {
-            text-align: center !important;
-        }
+            
 
         .navbar .nav-link:hover {
             color: green;
@@ -92,20 +87,33 @@
 
             background-color: bisque;
         }
-
-        text {
+        .custom-section
+        {
+            background-color: rgb(4, 72, 4);
+        }
+        text 
+        {
             font-size: 5rem;
             animation: fadeIn 0.8s ease-in-out forwards;
         }
 
-        @keyframes fadeIn {
-            from {
+        section {
+            animation: fadeIn 0.8s ease-in-out forwards;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        @keyframes fadeIn 
+        {
+            from 
+            {
                 opacity: 0;
                 transform: translateY(30px);
                 filter: blur(10px);
             }
 
-            to {
+            to 
+            {
                 opacity: 1;
                 transform: translateY(0);
                 filter: blur(0);
@@ -157,21 +165,19 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="pic 2.jpg"></div>
             <div class="swiper-slide"><img src="pic 3.jpg"></div>
-            <div class="swiper-slide"><img src="pic 4.webp"></div>
+            <div class="swiper-slide"><img src="https://images.pexels.com/photos/37070434/pexels-photo-37070434.jpeg"></div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </div>
     <!--About Us-->
-    <section class="py-5 custom-section">
-        <div class="container w-100" style="background-color:#2b3932; padding:20px;">
-            <h2 class="text-center mb-4 custom-h2">About Us</h2>
-            <div class="d-flex align-items-center justify-content-between">
-
-                <!-- Left side: text -->
-                <div class="w-50 pe-3">
-                    <p class="text-start custom-p">
-                        Welcome to my world of men’s fashion, where style meets confidence. <br>
+    <section class="py-5">
+        <div class="row custom-section">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card" style="background-color: transparent;  border:none;">
+                    <div class="card-body text-align-center">
+                        
+                        <p class="card-text">Welcome to my world of men’s fashion, where style meets confidence. <br>
                         Driven by a passion for timeless design and modern trends, <br>
                         I curate collections that blend sophistication with everyday wear. <br>
                         From sharp tailoring to casual essentials, each piece reflects <br>
@@ -180,16 +186,19 @@
                         and my goal is to inspire men to embrace their unique identity. <br>
                         Whether it’s a bold statement or subtle refinement, <br>
                         I believe every outfit tells a story worth sharing. <br>
-                        Step into this space and discover fashion redefined for today’s man. <br>
-
-                    </p>
+                        Step into this space and discover fashion redefined for today’s man.</p>
+                        <img src="endline.png" style="width: 100%; height: 300px;">
+                        
+                    </div>
                 </div>
-
-                <!-- Right side: image -->
-                <div class="w-50 ps-3 text-center">
-                    <img src="pic 1.webp" alt="About Us Image" class="img-fluid">
+            </div>
+            <div class="col-sm-6">
+                <div class="card" style="background-color: transparent; border:none;">
+                    <div class="card-body">
+                        <img src="pic 1.webp" class="img-fluid height:100%; width:100%;">
+                        
+                    </div>
                 </div>
-
             </div>
         </div>
     </section>
