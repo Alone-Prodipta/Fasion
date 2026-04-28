@@ -94,6 +94,13 @@
             margin-left: 50px;
             margin-right: 50px;
         }
+        .form-control:focus 
+        {
+            border-color: rgb(4, 72, 4);
+            box-shadow: 0 0 0 0.2rem rgba(4, 72, 4, 0.25);
+            border-width: 2px;
+            
+        }
 
         @keyframes fadeIn 
         {
@@ -117,7 +124,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-bisque fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#" style="font-family:lobster;color:rgb(4, 72, 4);"><u>Paris Londoner</u>.</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -168,7 +175,7 @@
             <div class="col-sm-6 mb-3 mb-sm-0">
                 <div class="card" style="background-color: transparent;  border:none;">
                     <div class="card-body text-align-center">
-                        <h2 style="font-family:kenia;font-size:50px;color:bisque;text-align:center;">About Us</h2>
+                        <h2 style="font-size:50px;color:bisque;text-align:center;">About Us</h2>
                         <p class="card-text">Welcome to my world of men’s fashion, where style meets confidence. <br>
                         Driven by a passion for timeless design and modern trends, <br>
                         I curate collections that blend sophistication with everyday wear. <br>
@@ -185,7 +192,7 @@
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="card" style="background-color: transparent; border:none;">
+                <div class="card" style="background-color: transparent; border:none; margin-top: 6%;">
                     <div class="card-body">
                         <img src="pic 1.webp" class="img-fluid height:100%; width:100%;">
                         
@@ -203,12 +210,12 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-            navigation: {
+            navigation: 
+            {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
         });
     </script>
 </body>
-
 </html>
