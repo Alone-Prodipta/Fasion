@@ -218,14 +218,9 @@ input[type=text], input[type=password], input[type=email]
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(24, 79, 3);
   box-sizing: border-box;
 }
-input:focus
-{
-    border-color: rgb(24, 79, 3);
-}
-
 /* Set a style for login buttons */
 #login 
 {
